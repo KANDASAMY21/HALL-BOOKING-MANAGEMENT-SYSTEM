@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #4a3f3a;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #3a4a47; /* Darker shade for hover */
+    transform: translateX(5px); /* Slight movement on hover */
+}
+
+.main-content {
+    margin-left: 250px; /* Width of the sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #fff;
+    transition: margin-left 0.3s;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4a3f3a;
+    text-align: center;
+}
+
+.bookings-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4a3f3a;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+.btn {
+    background-color: #4a3f3a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3a4a47; /* Darker shade for hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4a3f3a;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Reduced sidebar width */
+    }
+
+    .main-content {
+        margin-left: 200px; /* Adjust margin */
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-container {
+        flex-direction: column; /* Stack sidebar and content */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for sidebar */
+        position: relative; /* Remove fixed position */
+        height: auto; /* Auto height */
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove left margin */
+        padding: 10px; /* Reduce padding */
+    }
+}

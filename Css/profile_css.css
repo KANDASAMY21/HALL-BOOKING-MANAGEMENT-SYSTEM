@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #4a3f3a;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #3a4a47; 
+    transform: translateX(5px); 
+}
+
+.main-content {
+    margin-left: 250px; 
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #fff;
+    transition: margin-left 0.3s;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4a3f3a;
+    text-align: center;
+}
+
+.profile-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.profile-form {
+    background-color: #e7e7e7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #4a3f3a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3a4a47;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4a3f3a;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-container {
+        flex-direction: column; 
+    }
+
+    .sidebar {
+        width: 100%; 
+        position: relative;
+        height: auto; 
+    }
+
+    .main-content {
+        margin-left: 0; 
+        padding: 10px; 
+    }
+}

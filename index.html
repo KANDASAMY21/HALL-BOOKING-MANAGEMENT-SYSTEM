@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Look</title>
+    <link rel="stylesheet" href='./style.css'>
+</head>
+<body>
+<header>
+    <nav class="navbar" id="home">
+        <img src="./Assets/VenueLook_logo.png" width="150px" height="50px">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#book_now">Book Now</a></li>
+            <li id="login-menu" style="display: block;">
+                <a href="./Html/login_page.html">Login</a>
+            </li>
+            <li id="user-menu" style="display: none;">
+                <a href="#" id="username"></a>
+                <ul class="dropdown">
+                    <li><a href="./Html/user_dashboard.html">Dashboard</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </nav>
+</header>
+
+<section id="background_img"></section>
+
+<section id="about_us">
+    <div class="heading-box">
+        <h1 id="about-us">About Us</h1>
+    </div>
+    
+    <div class="container1">
+        <p>Welcome to Venue Look, your go-to destination for discovering and booking exceptional event spaces tailored to your unique needs. Founded on the belief that every event deserves the perfect setting, we are committed to helping you create unforgettable experiences, whether it's a wedding, corporate event, family gathering, or celebration of any kind.</p>
+        
+        <h3>Our Mission</h3>
+        <p>At Venue Look, our mission is simple: to make the process of finding and booking the ideal venue as effortless and enjoyable as possible. We understand that planning an event can be overwhelming, which is why we provide a comprehensive platform that streamlines the entire booking process.</p>
+
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li><strong>Diverse Venue Selection:</strong> We offer an extensive range of venues to suit every occasion and budget.</li>
+            <li><strong>User-Friendly Experience:</strong> Our intuitive platform allows you to easily search and compare venues.</li>
+            <li><strong>Personalized Support:</strong> Our dedicated team of venue experts is always ready to assist you.</li>
+            <li><strong>Transparent Pricing:</strong> We believe in clear communication and transparent pricing.</li>
+            <li><strong>Customer-Centric Approach:</strong> Your satisfaction is our top priority.</li>
+        </ul>
+
+        <h3>Our Story</h3>
+        <p>Founded by a team of passionate event planners and venue specialists, Venue Look was born out of a desire to simplify the venue booking process. We understand the nuances of event planning and the importance of finding a space that reflects your vision.</p>
+        
+        <h3>Join Us on Your Journey</h3>
+        <p>We invite you to explore our platform and discover the myriad of venue options available at your fingertips. Let us be part of your journey to creating lasting memories!</p>
+        
+        <p class="thank-you">Thank you for choosing Venue Look. We look forward to helping you find the perfect venue for your next event!</p>
+    </div>
+</section>
+
+<section id="book-now">
+    <div class="heading-box">
+        <h1 id="book_now">BOOK NOW</h1>
+    </div>
+
+    <div class="container2">
+        <div class="hall">
+            <img src="./Assets/hall1.jpg" alt="Hall 1" height="300px" width="400px">
+            <h3>Hall 1</h3>
+            <p>Suitable for joyful celebrations and get-togethers</p>
+            <button>Book Now</button>
+        </div>
+        <div class="hall">
+            <img src="./Assets/hall2.jpg" alt="Hall 2" height="300px" width="400px">
+            <h3>Hall 2</h3>
+            <p>Ideal for corporate meetings and workshops.</p>
+            <button>Book Now</button>
+        </div>
+        <div class="hall">
+            <img src="./Assets/hall3.jpg" alt="Hall 3" height="300px" width="400px">
+            <h3>Hall 3</h3>
+            <p>Perfect for weddings and large events.</p>
+            <button>Book Now</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123 Main Street, City, State, ZIP Code</p>
+            <p>Email: info@yourcompany.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ol class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#book_now">Book Now</a></li>
+                <li id="user-menu" style="display: none;">
+                    <a href="#" id="username"></a>
+                    <ul class="dropdown">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="#" id="logout">Logout</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Html/login_page.html">Login</a></li>
+                <li><a href="/Html/dashboard.html">Dashboard</a></li> <!-- Dashboard Link -->
+            </ol>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ol class="social-links">
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+            </ol>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p1>&copy; 2024 Venue Look. All rights reserved.</p1>
+    </div>
+</footer>
+<script src="./Js/dashboard_link.js"></script>
+</body>
+</html>
