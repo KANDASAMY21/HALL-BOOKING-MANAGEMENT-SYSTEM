@@ -80,15 +80,35 @@ body {
 /* ------------------------------------LOGIN PAGE----------------------------- */
 
 
+.login-page {
+    position: relative;
+    height: 70vh; 
+    overflow: hidden; 
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw);
+    height: calc(70vh);
+    background-image: url('../Assets/login_background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px); 
+    z-index: 1; 
+}
+
 .container {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255,0.8);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 400px;
     margin: 45px auto; 
-    
+    position: relative; 
+    z-index: 2; 
 }
 
 .login-form h2 {
