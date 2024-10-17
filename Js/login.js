@@ -13,7 +13,7 @@ document.getElementById('loginForm').onsubmit = function(event) {
     if (username === predefinedUsername && password === predefinedPassword) {
         localStorage.setItem('loggedIn', 'true');
         localStorage.setItem('username', username); 
-        window.location.href = '../index.html'; 
+        window.location.href = '../Html/user_dashboard.html'; 
     } else {
         
         document.getElementById('message').innerText = 'Invalid username or password';
