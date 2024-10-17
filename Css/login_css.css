@@ -10,7 +10,7 @@ body {
 
 .login-page {
     position: relative;
-    height: 70vh; 
+    height: 100vh; 
     overflow: hidden; 
 }
 
@@ -19,7 +19,7 @@ body {
     top: 0;
     left: 0;
     width: calc(100vw);
-    height: calc(70vh);
+    height: calc(100vh);
     background-image: url('../Assets/login_background.jpg');
     background-size: cover;
     background-position: center;
@@ -34,9 +34,10 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 400px;
-    margin: 45px auto; 
+    margin: 130px auto; 
     position: relative; 
     z-index: 2; 
+    align-content: center;
 }
 
 .login-form h2 {
