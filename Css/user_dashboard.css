@@ -52,7 +52,8 @@ body {
 }
 
 .sidebar nav ul li a:hover {
-    background-color: #3a4a47; 
+    color: #e4d4c8;
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateX(5px); 
 }
 
@@ -120,7 +121,7 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .dashboard-container {
         flex-direction: column; 
     }
@@ -138,5 +139,8 @@ footer {
 
     .card {
         padding: 15px; 
+    }
+    #img{
+       margin-left: 100px;
     }
 }

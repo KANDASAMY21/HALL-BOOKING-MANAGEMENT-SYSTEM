@@ -1,21 +1,21 @@
-document.getElementById('loginForm').onsubmit = function(event) {
+document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault(); 
 
-   
-    const predefinedUsername = 'Aswin';
-    const predefinedPassword = 'Aswin';
+    
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
 
-   
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    if (username && password) { 
+        sessionStorage.setItem("isLoggedIn", "true"); 
 
-   
-    if (username === predefinedUsername && password === predefinedPassword) {
-        localStorage.setItem('loggedIn', 'true');
-        localStorage.setItem('username', username); 
-        window.location.href = '../Html/user_dashboard.html'; 
+       
+        let redirectTo = sessionStorage.getItem("redirectTo");
+        if (redirectTo) {
+            window.location.href = redirectTo; 
+        } else {
+            window.location.href = "../Html/dashboard.html"; 
+        }
     } else {
-        
-        document.getElementById('message').innerText = 'Invalid username or password';
+        alert("Login failed! Please check your credentials."); 
     }
-};
+});

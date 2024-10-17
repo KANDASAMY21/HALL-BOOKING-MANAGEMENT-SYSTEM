@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href='/Css/login_css.css'>
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="../Css/payment.css">
     <link rel="stylesheet" href="../Css/header_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
     <header>
@@ -22,35 +21,34 @@
                 <li><a href="#footer">Contact Us</a></li>
         </nav>
     </header>
-    
-    <section class="login-page">
-        <div class="background"></div>
-    <div class="container">
-        <form class="login-form" id="loginForm">
-            <h2>Login</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            
-            <button type="submit">Login</button>
-           
-            <div class="links">
-                <a href="./forgot_page.html">Forgot Password?</a>
-                <a href="./registration_page.html">New User? Register here</a>
-            </div>
-            <p id="message" style="color: red;"></p> 
-        </form>
+
+    <div class="payment-container">
+        <div class="payment-card">
+            <h2>Payment Details</h2>
+            <form>
+                <div class="form-group">
+                    <label for="card-name">Name on Card:</label>
+                    <input type="text" id="card-name" name="card-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <button type="submit" class="btn">Pay Now</button>
+            </form>
+        </div>
     </div>
-    <script src="../Js/login.js"></script>
-    </section>
-    
+
  <!---------------------------- FOOTER ---------------------------------->
-<footer id="footer">
+ <footer id="footer">
     <div class="footerContainer">
         <div class="socialIcons">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -63,6 +61,5 @@
         <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
     </div>
   </footer>
-    
 </body>
 </html>

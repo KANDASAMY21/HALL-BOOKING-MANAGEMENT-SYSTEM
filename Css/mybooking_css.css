@@ -49,12 +49,13 @@ body {
 }
 
 .sidebar nav ul li a:hover {
-    background-color: #3a4a47; /* Darker shade for hover */
-    transform: translateX(5px); /* Slight movement on hover */
+    color: #e4d4c8;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px); 
 }
 
 .main-content {
-    margin-left: 250px; /* Width of the sidebar */
+    margin-left: 250px; 
     padding: 20px;
     flex-grow: 1;
     background-color: #fff;
@@ -111,7 +112,7 @@ table tr:hover {
 }
 
 .btn:hover {
-    background-color: #3a4a47; /* Darker shade for hover */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 footer {
@@ -123,30 +124,33 @@ footer {
     width: 100%;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .sidebar {
-        width: 200px; /* Reduced sidebar width */
+        width: 200px; 
     }
 
     .main-content {
-        margin-left: 200px; /* Adjust margin */
+        margin-left: 200px; 
     }
 }
 
 @media (max-width: 576px) {
     .dashboard-container {
-        flex-direction: column; /* Stack sidebar and content */
+        flex-direction: column; 
     }
 
     .sidebar {
-        width: 100%; /* Full width for sidebar */
-        position: relative; /* Remove fixed position */
-        height: auto; /* Auto height */
+        width: 100%;
+        position: relative; 
+        height: auto; 
     }
 
     .main-content {
-        margin-left: 0; /* Remove left margin */
-        padding: 10px; /* Reduce padding */
+        margin-left: 0; 
+        padding: 10px; 
     }
+    #img{
+        margin-left: 100px;
+     }
 }

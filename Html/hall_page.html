@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href='/Css/login_css.css'>
+    <title>Hall Details</title>
+    <link rel="stylesheet" href="../Css/hall_page.css">
     <link rel="stylesheet" href="../Css/header_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
+
     <header>
         <nav class="navbar" id="home">
             <img src="../Assets/VenueLook_logo.png" width="250px" height="60px  ">
@@ -22,34 +22,41 @@
                 <li><a href="#footer">Contact Us</a></li>
         </nav>
     </header>
-    
-    <section class="login-page">
-        <div class="background"></div>
-    <div class="container">
-        <form class="login-form" id="loginForm">
-            <h2>Login</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+
+    <div class="hall-details-container">
+        <div class="hall-details-card">
+            <h2>Grand Hall</h2>
+            <p class="hall-description">The Grand Hall is perfect for large gatherings, weddings, and conferences. It features a spacious area with modern amenities and a beautiful ambiance.</p>
+            
+            <h3>Features:</h3>
+            <ul class="hall-features">
+                <li>Capacity: Up to 500 guests</li>
+                <li>Audio/Visual Equipment</li>
+                <li>Wi-Fi Access</li>
+                <li>Catering Services Available</li>
+                <li>Parking Space</li>
+                <li>Stage and Lighting Setup</li>
+            </ul>
+
+            <h3>Pricing:</h3>
+            <p class="hall-pricing">Starting from <strong>₹20,000</strong> per event.</p>
+
+            <h3>Availability:</h3>
+            <p class="hall-availability">Available for booking on weekdays and weekends. Check the calendar for specific dates.</p>
+            
+            <h3>Gallery:</h3>
+            <div class="gallery">
+                <img src="../Assets/hall_interior.jpg" alt="Hall Interior" class="gallery-image">
+                <img src="../Assets/hall_interior.jpg" alt="Hall Setup" class="gallery-image">
+                <img src="../Assets/hall_interior.jpg" alt="Hall Event" class="gallery-image">
             </div>
             
-            <button type="submit">Login</button>
-           
-            <div class="links">
-                <a href="./forgot_page.html">Forgot Password?</a>
-                <a href="./registration_page.html">New User? Register here</a>
-            </div>
-            <p id="message" style="color: red;"></p> 
-        </form>
+            <button class="btn"  id="bookNowBtn">Book Now</button>
+        </div>
+
     </div>
-    <script src="../Js/login.js"></script>
-    </section>
-    
- <!---------------------------- FOOTER ---------------------------------->
+
+     <!---------------------------- FOOTER ---------------------------------->
 <footer id="footer">
     <div class="footerContainer">
         <div class="socialIcons">
@@ -63,6 +70,6 @@
         <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
     </div>
   </footer>
-    
+  <script src="../Js/check_user.js"></script>
 </body>
 </html>

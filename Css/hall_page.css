@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full Viewport Styles */
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Hall Details Container */
+.hall-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Use full height of viewport */
+    padding: 20px;
+}
+
+/* Hall Details Card Styles */
+.hall-details-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px; /* Increased max width */
+    margin: auto;
+}
+
+.hall-details-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #4a3f3a;
+    text-align: center;
+    font-size: 28px; /* Increased font size */
+}
+
+.hall-description {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Features List */
+.hall-features {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.hall-features li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Pricing and Availability */
+.hall-pricing,
+.hall-availability {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.gallery-image {
+    width: 30%; /* Adjust as needed */
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Button */
+.btn {
+    background-color: #4a3f3a;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #3a4a47;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hall-details-card {
+        max-width: 90%;
+    }
+
+    .gallery-image {
+        width: 45%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .hall-details-card {
+        max-width: 95%;
+    }
+
+    .gallery-image {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
