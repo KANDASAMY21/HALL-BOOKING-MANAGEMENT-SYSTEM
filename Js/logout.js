@@ -1,8 +1,8 @@
 document.getElementById('logout')?.addEventListener('click', function(event) {
     event.preventDefault(); 
-   
-    localStorage.removeItem('loggedIn');
-    localStorage.removeItem('username');
-
+    
+    localStorage.clear()
+    sessionStorage.clear()
+    
     window.location.href = '../index.html'; 
 });

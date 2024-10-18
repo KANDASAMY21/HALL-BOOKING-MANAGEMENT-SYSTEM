@@ -10,6 +10,8 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    height: 100vh;
+    margin-top: -40px;
 }
 
 .payment-card {
@@ -66,7 +68,7 @@ input[type="text"] {
 
 
 .btn:hover {
-    background-color: #3a4a47;
+    background-color: #7a685f;
 }
 
 

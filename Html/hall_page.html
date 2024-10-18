@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hall Details</title>
+    <title>Hall Details - Venue Look</title>
     <link rel="stylesheet" href="../Css/hall_page.css">
     <link rel="stylesheet" href="../Css/header_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../Assets/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -20,6 +21,17 @@
                 <li><a href="../index.html#about-us">About Us</a></li>
                 <li><a href="../index.html#book_now">Hall</a></li>
                 <li><a href="#footer">Contact Us</a></li>
+                <li id="login-menu" style="display: block;">
+                    <a href="./login_page.html">Login</a>
+                </li>
+                <li id="user-menu" style="display: none;">
+                    <a href="#" id="username" ></a>
+                    <ul class="dropdown">
+                        <li><a href="../Html/user_dashboard.html">Dashboard</a></li>
+                        <li><a href="#" id="logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -71,5 +83,6 @@
     </div>
   </footer>
   <script src="../Js/check_user.js"></script>
+  <script src="../Js/navbar.js"></script>
 </body>
 </html>
