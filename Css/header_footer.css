@@ -8,7 +8,7 @@ body {
     margin: 0; 
     padding-top: 100px;
     font-family: Arial, sans-serif;
-    background-color: #E4D4c8;
+
 }
 
 
@@ -218,6 +218,7 @@ body {
 /* ------------------------------------------------------FOOTER-------------------------------------------- */
 footer{
     background-color: #4a3f3a;
+    margin-top: 0;
   }
   .footerContainer{
     width: 100%;

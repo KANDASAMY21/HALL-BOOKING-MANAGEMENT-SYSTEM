@@ -1,127 +1,153 @@
-/* General Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Full Viewport Styles */
-body, html {
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Hall Details Container */
-.hall-details-container {
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    max-height: 100vh; 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Use full height of viewport */
-    padding: 20px;
+    flex-direction: column;
+    height: 100vh;
 }
 
-/* Hall Details Card Styles */
-.hall-details-card {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 600px; /* Increased max width */
+.hall-details {
+    max-width: 1200px;
     margin: auto;
+    padding: 20px;
+    flex-grow: 1;
+    margin-top: 50px;
+    height: 100vh;
 }
 
-.hall-details-card h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #4a3f3a;
+.hall-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.hall-card h1 {
     text-align: center;
-    font-size: 28px; /* Increased font size */
+    color: #4a3f3a;
+    margin-bottom: 20px;
+}
+
+.hall-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hall-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hall-description {
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #555;
+    max-width: 600px;
+    margin-left: 20px;
 }
 
-/* Features List */
-.hall-features {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 15px;
-    text-decoration: none;
+.hall-description h2 {
+    margin-bottom: 10px;
+    color: #4a3f3a;
+    font-size: 28px;
 }
 
-.hall-features li {
-    margin-bottom: 5px;
-    font-size: 16px;
-    color: #333;
-    text-decoration: none;
-}
-
-/* Pricing and Availability */
-.hall-pricing,
-.hall-availability {
+.hall-description p {
     margin: 10px 0;
     font-size: 16px;
-    color: #333;
+    line-height: 1.6;
 }
 
-/* Gallery Styles */
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
+.hall-description h3 {
+    margin-top: 15px;
+    color: #4a3f3a;
 }
 
-.gallery-image {
-    width: 30%; /* Adjust as needed */
-    border-radius: 5px;
-    margin: 5px;
+.hall-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
 }
 
-/* Button */
-.btn {
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh + 55px);
+    background-image: url('../Assets/hall_page_background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    z-index: -1; 
+    opacity: 0.9; 
+    
+}
+
+.btn-book {
     background-color: #4a3f3a;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s;
     font-size: 16px;
-    transition: background-color 0.3s;
 }
 
-/* Button Hover Effect */
-.btn:hover {
+.btn-book:hover {
     background-color: #7a685f;
+    transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hall-details-card {
-        max-width: 90%;
+@media (max-width: 1024px) {
+    .hall-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .gallery-image {
-        width: 45%; /* Adjust for smaller screens */
+    .hall-description {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hall-card {
+        padding: 15px;
+    }
+
+    .hall-description h2 {
+        font-size: 24px;
+    }
+
+    .btn-book {
+        padding: 10px 16px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 576px) {
-    .hall-details-card {
-        max-width: 95%;
+    .hall-image img {
+        max-width: 100%;
     }
 
-    .gallery-image {
-        width: 100%; /* Full width for smaller screens */
-    }
-
-    .btn {
+    .hall-description p, .hall-description ul {
         font-size: 14px;
+    }
+
+    .btn-book {
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }

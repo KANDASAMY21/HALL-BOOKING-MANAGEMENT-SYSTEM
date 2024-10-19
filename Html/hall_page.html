@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hall Details - Venue Look</title>
+    <title>Hall Details</title>
     <link rel="stylesheet" href="../Css/hall_page.css">
     <link rel="stylesheet" href="../Css/header_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,41 +35,36 @@
         </nav>
     </header>
 
-    <div class="hall-details-container">
-        <div class="hall-details-card">
-            <h2>Grand Hall</h2>
-            <p class="hall-description">The Grand Hall is perfect for large gatherings, weddings, and conferences. It features a spacious area with modern amenities and a beautiful ambiance.</p>
-            
-            <h3>Features:</h3>
-            <ul class="hall-features">
-                <li>Capacity: Up to 500 guests</li>
-                <li>Audio/Visual Equipment</li>
-                <li>Wi-Fi Access</li>
-                <li>Catering Services Available</li>
-                <li>Parking Space</li>
-                <li>Stage and Lighting Setup</li>
-            </ul>
-
-            <h3>Pricing:</h3>
-            <p class="hall-pricing">Starting from <strong>₹20,000</strong> per event.</p>
-
-            <h3>Availability:</h3>
-            <p class="hall-availability">Available for booking on weekdays and weekends. Check the calendar for specific dates.</p>
-            
-            <h3>Gallery:</h3>
-            <div class="gallery">
-                <img src="../Assets/hall_interior.jpg" alt="Hall Interior" class="gallery-image">
-                <img src="../Assets/hall_interior.jpg" alt="Hall Setup" class="gallery-image">
-                <img src="../Assets/hall_interior.jpg" alt="Hall Event" class="gallery-image">
+    
+<div class="hall-details">
+    <div class="background"></div>
+    <div class="hall-card"> 
+        <h1>Welcome to the Grand Ballroom</h1>
+        <div class="hall-info">
+            <div class="hall-image">
+                <img src="../Assets/hall_interior.jpg" alt="Grand Ballroom">
             </div>
-            
-            <button class="btn"  id="bookNowBtn">Book Now</button>
+            <div class="hall-description">
+                <h2>Discover Elegance and Comfort</h2>
+                <p>Step into our stunning Grand Ballroom, where timeless elegance meets modern amenities. Perfectly designed for weddings, corporate gatherings, and unforgettable celebrations, our hall is the ultimate venue for any occasion.</p>
+                <h3>Features:</h3>
+                <ul>
+                    <li><strong>Seating Capacity:</strong> 300 guests</li>
+                    <li><strong>Luxurious A/C and Heating:</strong> Comfort year-round</li>
+                    <li><strong>State-of-the-art Audio-Visual Equipment:</strong> Bring your presentations to life</li>
+                    <li><strong>In-house Catering Services:</strong> Delicious menu options tailored to your needs</li>
+                    <li><strong>Ample Free Parking:</strong> Hassle-free access for you and your guests</li>
+                </ul>
+                <h3>Booking Information:</h3>
+                <p>Ready to create unforgettable memories? To reserve the Grand Ballroom for your event, contact us at <strong>(+91) 63855 62110</strong></p>
+                <button class="btn-book btn"  id="bookNowBtn">Book Now!</button>
+            </div>
         </div>
+    </div> <!-- End of Card Wrapper -->
+</div>
 
-    </div>
-
-     <!---------------------------- FOOTER ---------------------------------->
-<footer id="footer">
+ <!---------------------------- FOOTER ---------------------------------->
+ <footer id="footer" style="margin-top:100px ;">
     <div class="footerContainer">
         <div class="socialIcons">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -78,11 +73,13 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>   
     </div>
-    <div class="footerBottom">
+    <div class="footerBottom" >
         <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
     </div>
   </footer>
   <script src="../Js/check_user.js"></script>
+  <script src="../Js/login.js"></script>
   <script src="../Js/navbar.js"></script>
+    
 </body>
 </html>

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page - Venue Look</title>
-    <link rel="stylesheet" href="../Css/payment.css">
+    <title>Booking Form - Hall Management System</title>
+    <link rel="stylesheet" href="../Css/booking_details.css">
     <link rel="stylesheet" href="../Css/header_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../Assets/logo.png" type="image/x-icon">
 </head>
 <body>
+
     <header>
         <nav class="navbar" id="home">
             <img src="../Assets/VenueLook_logo.png" width="250px" height="60px  ">
@@ -33,35 +34,61 @@
             </ul>
         </nav>
     </header>
-
-    <div class="payment-container">
+    
+    <div class="booking-container">
         <div class="background"></div>
-        <div class="payment-card">
-            <h2>Payment Details</h2>
-            <form>
+        <div class="card">
+            <h2>Fill in Your Booking Details</h2>
+            <form action="../Html/payment.html" method="post" class="booking-form">
                 <div class="form-group">
-                    <label for="card-name">Name on Card:</label>
-                    <input type="text" id="card-name" name="card-name" required>
+                    <label for="eventName">Event Name</label>
+                    <input type="text" id="eventName" name="event_name" placeholder="Wedding, Party, etc." required>
                 </div>
+                
                 <div class="form-group">
-                    <label for="card-number">Card Number:</label>
-                    <input type="text" id="card-number" name="card-number" required>
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate" name="event_date" required>
                 </div>
+                
                 <div class="form-group">
-                    <label for="expiry-date">Expiry Date:</label>
-                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                    <label for="eventTime">Event Time</label>
+                    <input type="time" id="eventTime" name="event_time" required>
                 </div>
+                
                 <div class="form-group">
-                    <label for="cvv">CVV:</label>
-                    <input type="text" id="cvv" name="cvv" required>
+                    <label for="guestCount">Guest Count</label>
+                    <input type="number" id="guestCount" name="guest_count" placeholder="Number of guests" required>
                 </div>
-                <button type="submit" class="btn"><a href="../Html/thankyou.html" style="text-decoration: none; color: whitesmoke;">Pay Now</a></button>
+                
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" id="price" name="price" placeholder="₹50000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactName">Your Name</label>
+                    <input type="text" id="contactName" name="contact_name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactPhone">Phone</label>
+                    <input type="tel" id="contactPhone" name="contact_phone" placeholder="+91 98765 43210" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" name="contact_email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn btn-submit"><a href="../Html/payment.html" style="text-decoration: none; color: whitesmoke;">Submit Booking</a></button>
+                </div>
             </form>
         </div>
     </div>
 
- <!---------------------------- FOOTER ---------------------------------->
- <footer id="footer">
+     <!---------------------------- FOOTER ---------------------------------->
+<footer id="footer">
     <div class="footerContainer">
         <div class="socialIcons">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -74,7 +101,8 @@
         <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
     </div>
   </footer>
-  <script src="../Js/navbar.js"></script>
   <script src="../Js/check_user.js"></script>
+  <script src="../Js/login.js"></script>
+  <script src="../Js/navbar.js"></script>
 </body>
 </html>
