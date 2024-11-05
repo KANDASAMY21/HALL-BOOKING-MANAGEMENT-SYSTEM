@@ -13,7 +13,7 @@
 
     <header>
         <nav class="navbar" id="home">
-            <img src="../Assets/VenueLook_logo.png" width="250px" height="60px  ">
+            <img src="../Assets/VenueLook_logo.png" width="250px" height="60px">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-icon">☰</label>
             <ul class="nav-links">
@@ -25,7 +25,7 @@
                     <a href="./login_page.html">Login</a>
                 </li>
                 <li id="user-menu" style="display: none;">
-                    <a href="#" id="username" ></a>
+                    <a href="#" id="username"></a>
                     <ul class="dropdown">
                         <li><a href="../Html/user_dashboard.html">Dashboard</a></li>
                         <li><a href="#" id="logout">Logout</a></li>
@@ -39,70 +39,79 @@
         <div class="background"></div>
         <div class="card">
             <h2>Fill in Your Booking Details</h2>
-            <form action="../Html/payment.html" method="post" class="booking-form">
+            <form id="bookingForm" class="booking-form">
                 <div class="form-group">
                     <label for="eventName">Event Name</label>
                     <input type="text" id="eventName" name="event_name" placeholder="Wedding, Party, etc." required>
+                    <div class="error-message" id="eventNameError">Event name is required.</div>
                 </div>
                 
                 <div class="form-group">
                     <label for="eventDate">Event Date</label>
                     <input type="date" id="eventDate" name="event_date" required>
+                    <div class="error-message" id="eventDateError">Please select a valid date.</div>
                 </div>
                 
                 <div class="form-group">
                     <label for="eventTime">Event Time</label>
                     <input type="time" id="eventTime" name="event_time" required>
+                    <div class="error-message" id="eventTimeError">Please select a valid time.</div>
                 </div>
                 
                 <div class="form-group">
                     <label for="guestCount">Guest Count</label>
                     <input type="number" id="guestCount" name="guest_count" placeholder="Number of guests" required>
+                    <div class="error-message" id="guestCountError">Please enter a valid number of guests.</div>
                 </div>
                 
                 <div class="form-group">
                     <label for="price">Price</label>
                     <input type="text" id="price" name="price" placeholder="₹50000" required>
+                    <div class="error-message" id="priceError">Price must be a number.</div>
                 </div>
 
                 <div class="form-group">
                     <label for="contactName">Your Name</label>
                     <input type="text" id="contactName" name="contact_name" placeholder="Enter your name" required>
+                    <div class="error-message" id="contactNameError">Name is required.</div>
                 </div>
                 
                 <div class="form-group">
                     <label for="contactPhone">Phone</label>
                     <input type="tel" id="contactPhone" name="contact_phone" placeholder="+91 98765 43210" required>
+                    <div class="error-message" id="contactPhoneError">Please enter a valid phone number.</div>
                 </div>
 
                 <div class="form-group">
                     <label for="contactEmail">Email</label>
                     <input type="email" id="contactEmail" name="contact_email" placeholder="Enter your email" required>
+                    <div class="error-message" id="contactEmailError">Please enter a valid email.</div>
                 </div>
 
                 <div class="actions">
-                    <button type="submit" class="btn btn-submit"><a href="../Html/payment.html" style="text-decoration: none; color: whitesmoke;">Submit Booking</a></button>
+                    <button type="submit" class="btn btn-submit">Submit Booking</button>
                 </div>
             </form>
         </div>
     </div>
 
-     <!---------------------------- FOOTER ---------------------------------->
-<footer id="footer">
-    <div class="footerContainer">
-        <div class="socialIcons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>   
-    </div>
-    <div class="footerBottom">
-        <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
-    </div>
-  </footer>
-  <script src="../Js/check_user.js"></script>
-  <script src="../Js/login.js"></script>
-  <script src="../Js/navbar.js"></script>
+    <!---------------------------- FOOTER ---------------------------------->
+    <footer id="footer">
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>   
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
+        </div>
+    </footer>
+
+    <script src="../Js/check_user.js"></script>
+    <script src="../Js/login.js"></script>
+    <script src="../Js/navbar.js"></script>
 </body>
 </html>

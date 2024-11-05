@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page  - Venue Look</title>
-    <link rel="stylesheet" href='../Css/registration_css.css'>
+    <title>Registration Page - Venue Look</title>
+    <link rel="stylesheet" href="../Css/registration_css.css">
     <link rel="stylesheet" href="../Css/header_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../Assets/logo.png" type="image/x-icon">
@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="navbar" id="home">
-            <img src="../Assets/VenueLook_logo.png" width="250px" height="60px  ">
+            <img src="../Assets/VenueLook_logo.png" width="250px" height="60px">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-icon">☰</label>
             <ul class="nav-links">
@@ -20,50 +20,61 @@
                 <li><a href="../index.html#about-us">About Us</a></li>
                 <li><a href="../index.html#book_now">Hall</a></li>
                 <li><a href="#footer">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <section class="registration-page">
-    <div class="background"></div>
-    <div class="container">
-        <form class="registration-form">
-            <h2>New User Registration</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="input-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-            </div>
-            <button type="submit">Register</button>
-            <p>Already have an account? <a href="./login_page.html">Login here</a></p>
-        </form>
-    </div>
-</section>
+        <div class="background"></div>
+        <div class="container">
+            <form class="registration-form" id="registrationForm">
+                <h2>New User Registration</h2>
+                
+                <div class="input-group" id="username-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter a unique username">
+                    <span id="username-error" class="error-message"></span>
+                </div>
+                
+                <div class="input-group" id="email-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter a valid email">
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                
+                <div class="input-group" id="password-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="At least 6 characters">
+                    <span id="password-error" class="error-message"></span>
+                </div>
+                
+                <div class="input-group" id="confirm-password-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+                    <span id="confirm-password-error" class="error-message"></span>
+                </div>
+                
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="./login_page.html">Login here</a></p>
+            </form>
+        </div>
+        <div id="error-message" style="color: red; margin-top: 10px;"></div>
+    </section>
 
- <!---------------------------- FOOTER ---------------------------------->
- <footer id="footer">
-    <div class="footerContainer">
-        <div class="socialIcons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>   
-    </div>
-    <div class="footerBottom">
-        <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
-    </div>
-  </footer>
+    <footer id="footer">
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
+        </div>
+    </footer>
 
+    <script src="../Js/registration.js"></script>
 </body>
 </html>

@@ -1,6 +1,4 @@
-
 /* ------------------------------------LOGIN PAGE----------------------------- */
-
 
 .login-page {
     position: relative;
@@ -22,7 +20,7 @@
 }
 
 .container {
-    background-color: rgb(255, 255, 255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -63,6 +61,13 @@
     outline: none;
 }
 
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px; 
+
+}
+
 button {
     width: 100%;
     padding: 10px;
@@ -99,3 +104,8 @@ button:hover {
     text-decoration: underline;
 }
 
+/* Additional styles for error message visibility */
+input:invalid + .error-message,
+input:focus:invalid + .error-message {
+    display: block; /* Show error message when input is invalid */
+}

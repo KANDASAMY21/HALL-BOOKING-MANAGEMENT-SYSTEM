@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="navbar" id="home">
-            <img src="../Assets/VenueLook_logo.png" width="250px" height="60px  ">
+            <img src="../Assets/VenueLook_logo.png" width="250px" height="60px">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-icon">☰</label>
             <ul class="nav-links">
@@ -20,53 +20,54 @@
                 <li><a href="../index.html#about-us">About Us</a></li>
                 <li><a href="../index.html#book_now">Hall</a></li>
                 <li><a href="#footer">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     
     <section class="login-page">
         <div class="background"></div>
-    <div class="container">
-        <form class="login-form" id="loginForm">
-            <h2>Login</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            
-            <button type="submit">Login</button>
+        <div class="container">
+            <form class="login-form" id="loginForm">
+                <h2>Login</h2>
+                <div class="input-group" id="username-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <span class="error-message" id="username-error"></span>
+                </div>
+                <div class="input-group" id="password-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                
+                <button type="submit">Login</button>
 
-            <div id="error-message" style="color: red; margin-top: 10px;"></div> 
-           
-            <div class="links">
-                <a href="./forgot_page.html">Forgot Password?</a>
-                <a href="./registration_page.html">New User? Register here</a>
-            </div>
-        
-        </form>
-    </div>
-    
+                <div id="error-message" style="color: red; margin-top: 10px;"></div> 
+                
+                <div class="links">
+                    <a href="./forgot_page.html">Forgot Password?</a>
+                    <a href="./registration_page.html">New User? Register here</a>
+                </div>
+            </form>
+        </div>
     </section>
     
- <!---------------------------- FOOTER ---------------------------------->
-<footer id="footer">
-    <div class="footerContainer">
-        <div class="socialIcons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>   
-    </div>
-    <div class="footerBottom">
-        <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
-    </div>
-  </footer>
-  <script src="../Js/check_user.js"></script>
-  <script src="../Js/login.js"></script>
+    <!---------------------------- FOOTER ---------------------------------->
+    <footer id="footer">
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>   
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024 <span class="designer">Venue Look</span></p>
+        </div>
+    </footer>
     
+    <script src="../Js/check_user.js"></script>
+    <script src="../Js/login.js"></script>
 </body>
 </html>
